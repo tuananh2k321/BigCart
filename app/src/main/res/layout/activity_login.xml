@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.LoginActivity"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="15dp"
+        android:background="@color/backgroundColor"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to BigCart"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please choose your login option below"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/detailColor"
+            android:layout_marginBottom="30dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_gravity="left"
+            android:textSize="16sp"
+            android:textColor="@color/detailColor"
+            android:layout_marginBottom="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/lnl_bg_edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_edit_text"
+            android:layout_marginBottom="5dp"
+            >
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icons8_letter_50"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_weight="8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:hint="abc@gmail.com"
+                android:textColorHint="@color/detailColor"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_no_border"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_errorEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="invalid email"
+            android:visibility="gone"
+            android:textSize="16sp"
+            android:textColor="@color/errorColor"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_gravity="left"
+            android:textSize="16sp"
+            android:textColor="@color/detailColor"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/lnl_bg_edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_edit_text"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icons8_password_50"
+                android:layout_gravity="center"
+                />
+
+
+            <EditText
+                android:layout_weight="8"
+                android:id="@+id/edt_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/detailColor"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:inputType="textPassword"
+                android:background="@drawable/bg_no_border"
+                android:padding="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/icon_eye"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icons8_eye_24"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_errorPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="can't be empty"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textColor="@color/errorColor"
+            />
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            android:textSize="16sp"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/primaryColor"
+            />
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_button_primary"
+            />
+
+        <TextView
+            android:id="@+id/tv_error_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Incorrect email or password"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textColor="@color/errorColor"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="or login with"
+                android:textSize="16sp"
+                android:textColor="@color/detailColor"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tvText"
+                android:background="@color/detailColor"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tvText"
+                android:background="@color/detailColor"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btn_login_google"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:text="Login with Google"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:background="@drawable/bg_button_no_background"
+                android:drawableLeft="@drawable/icons8_google_25"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="5dp"
+                />
+
+
+            <Button
+                android:id="@+id/btn_login_facebook"
+                android:layout_weight="1.1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:text="Login with Facebook"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:background="@drawable/bg_button_no_background"
+                android:drawableLeft="@drawable/icons8_facebook_25"
+                android:paddingLeft="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/detailColor"
+                android:text="Doesn’t have account on BigCart?"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_create_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/primaryColor"
+                android:text="Create account"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
+

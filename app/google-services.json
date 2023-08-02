@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "742080902455",
+    "project_id": "bigcart-49953",
+    "storage_bucket": "bigcart-49953.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742080902455:android:a061c35d7989d0260516b2",
+        "android_client_info": {
+          "package_name": "com.example.bigcart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742080902455-kglcdc7s9lfa0kqa9k49i523l022gm71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzPqVmJr3LsDvY6RDexCYZrG03TyfBdzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742080902455-kglcdc7s9lfa0kqa9k49i523l022gm71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

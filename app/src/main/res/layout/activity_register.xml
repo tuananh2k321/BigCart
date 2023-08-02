@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".view.RegisterActivity">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".view.RegisterActivity"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:background="@color/backgroundColor"
+            >
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icons8_left_25"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="Create account"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Get the best out of BigCart by creating an account"
+                android:textStyle="bold"
+                android:textColor="@color/detailColor"
+                android:layout_marginBottom="20dp"
+                />
+
+            <!--  FULL NAME-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Full name"
+                android:textStyle="bold"
+                android:textColor="@color/detailColor"
+                android:layout_marginBottom="8dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/bg_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_edit_text"
+                android:layout_marginBottom="10dp"
+                >
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/icons8_person_50"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_fullname"
+                    android:layout_weight="8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:hint="Albert Rock"
+                    android:textColorHint="@color/detailColor"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_no_border"
+                    android:padding="5dp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_error_fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:visibility="gone"
+                android:text="invalid name"
+                android:textSize="16sp"
+                android:textColor="@color/errorColor"
+                android:layout_marginBottom="15dp"
+                />
+
+
+
+            <!--  PHONE NUMBER-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Phone Number"
+                android:textStyle="bold"
+                android:textColor="@color/detailColor"
+                android:layout_marginBottom="8dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/bg_phone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_edit_text"
+                android:layout_marginBottom="10dp"
+                >
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/icons8_phone_25"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_phone"
+                    android:layout_weight="8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/detailColor"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_no_border"
+                    android:padding="5dp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_error_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="invalid phone number"
+                android:visibility="gone"
+                android:textSize="16sp"
+                android:textColor="@color/errorColor"
+                android:layout_marginBottom="15dp"
+                />
+
+
+            <!--  BIRTHDAY-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Birthday"
+                android:textStyle="bold"
+                android:textColor="@color/detailColor"
+                android:layout_marginBottom="8dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/bg_dob"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_edit_text"
+                android:layout_marginBottom="10dp"
+                >
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/icons8_birthday_cake_25"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_dob"
+                    android:layout_weight="8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:hint="01/05/2003"
+                    android:textColorHint="@color/detailColor"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_no_border"
+                    android:padding="5dp"
+                    />
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/icons8_calendar_25"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_error_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="invalid birthday"
+                android:visibility="gone"
+                android:textSize="16sp"
+                android:textColor="@color/errorColor"
+                android:layout_marginBottom="15dp"
+                />
+
+
+            <!-- EMAIL -->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Email"
+                android:textStyle="bold"
+                android:textColor="@color/detailColor"
+                android:layout_marginBottom="8dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/bg_email"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_edit_text"
+                android:layout_marginBottom="10dp"
+                >
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/icons8_letter_50"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_weight="8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:hint="abc@gmail.com"
+                    android:textColorHint="@color/detailColor"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_no_border"
+                    android:padding="5dp"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_error_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="invalid email"
+                android:visibility="gone"
+                android:textSize="16sp"
+                android:textColor="@color/errorColor"
+                android:layout_marginBottom="15dp"
+                />
+
+
+            <!--  PASSWORD-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Password"
+                android:textStyle="bold"
+                android:textColor="@color/detailColor"
+                android:layout_marginBottom="8dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/bg_password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_edit_text"
+                android:layout_marginBottom="10dp"
+                >
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/icons8_password_50"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_weight="8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/detailColor"
+                    android:textSize="16sp"
+                    android:inputType="textPassword"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_no_border"
+                    android:padding="5dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_eye_pass"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/icons8_eye_24"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_error_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Password requirements must contain at least 8 characters. Must have capital letters and numbers"
+                android:visibility="gone"
+                android:textSize="16sp"
+                android:textColor="@color/errorColor"
+                android:layout_marginBottom="15dp"
+                />
+            <!-- RE-PASSWORD-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Re-Password"
+                android:textStyle="bold"
+                android:textColor="@color/detailColor"
+                android:layout_marginBottom="8dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/bg_re_pass"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_edit_text"
+                android:layout_marginBottom="10dp"
+                >
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/icons8_password_50"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_re_password"
+                    android:layout_weight="8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/detailColor"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:inputType="textPassword"
+                    android:background="@drawable/bg_no_border"
+                    android:padding="5dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_eye_re_pass"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/icons8_eye_24"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_error_re_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="can't be empty"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:textColor="@color/errorColor"
+                android:layout_marginBottom="15dp"
+                />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="I accept term and condition"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:checked="false"
+                />
+
+            <TextView
+                android:id="@+id/tv_error_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="can't be empty"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:textColor="@color/errorColor"
+                android:layout_marginTop="15dp"
+                />
+
+            <Button
+                android:id="@+id/btn_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Sign Up"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_button_primary"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/detailColor"
+                    android:text="Already have an account?"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primaryColor"
+                    android:text="Login"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>

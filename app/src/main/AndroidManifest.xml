@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BigCart"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".NotifyVerifyEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.main.user.view.MyCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.main.user.view.MyOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.NewPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.main.user.view.NewAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.main.user.view.MyAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.main.user.view.AboutMeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.main.home.view.DetailProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.main.home.view.ListProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.main.home.view.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.main.MainActivity"
+            android:exported="true">
+
+        </activity> <!-- auth -->
+        <activity
+            android:name=".view.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="bigcart.page.link"
+                    android:scheme="https"
+                    android:pathPrefix="/verify_email"
+                    />
+                <!-- Thay thế bằng host của ứng dụng bạn -->
+                <!-- Định nghĩa giao thức, có thể sử dụng "http" nếu bạn không sử dụng SSL -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.VerifyCodeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.ForgotPasswordActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".view.RegisterActivity"
+            android:exported="false"></activity>
+
+        <activity
+            android:name=".view.Splash"
+            android:exported="false" />
+        <activity
+            android:name=".view.introduction.IntroduceActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
